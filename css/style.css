@@ -1,0 +1,464 @@
+body {
+    background-color: black;
+    margin: 0%;
+    margin-bottom: 0%;
+}
+
+.grid-container {
+    background-color: black;
+    background-image: url(../img/body.jpg);
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    grid-template-rows: 200px 700px 450px 450px 200px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "container1 container1 container3"
+    "container2 container2 container3"
+    "footer footer footer"
+    ;
+    margin-bottom: 0%;
+}
+
+.container__header {
+    grid-area: header;
+}
+
+.container__main {
+    grid-area: main;
+}
+
+.container1 {
+    grid-area: container1;
+    align-self: center;
+}
+
+.container2 {
+    grid-area: container2;
+    align-self: center;
+}
+
+.container3 {
+    grid-area: container3;
+    align-self: center;
+}
+
+.container__footer {
+    grid-area: footer;
+}
+/*Finaliza grids*/
+
+/*Comienza header*/
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../img/musica.jpg);
+    background-size: contain;
+    color: orange;
+    margin: 0%;
+   /*  padding: 20px; */
+    box-shadow: 2px 2px 20px orange;
+    border-bottom: solid 3px orange;
+}
+
+#logo {
+    background-color:  rgba(0, 0, 0, 0.604);
+    font-family: 'Tapestry', cursive;
+    font-size: 50px;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: orange;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.604);
+}
+
+
+/*Finaliza header*/
+
+
+/*Comienza Main*/
+.container__main {
+    background-image: url(../img/Instrumentos.jpeg);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid 1px black;
+
+    font-size: 32px;
+    font-family: 'Koulen', cursive;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* .container__main p, h2 {
+    background-color: rgba(0, 0, 0, 0.477);
+} */
+
+/*Finaliza main*/
+
+/* Comienzan los estilos de las secciones*/
+.box1 {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    background-color: rgba(0, 0, 0, 0.834);
+    color: orange;
+    padding: 10px;
+    gap: 4rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px gold;
+    
+}
+
+#foto {
+    width: 300px;
+    height: 400px;
+    border: inset 2px rgb(243, 180, 64);
+    border-radius: 5px;
+}
+
+.texto_box1 h3 {
+    width: 400px;
+    font-size: 60px;
+    margin: 0%;
+
+}
+
+.texto_box1 {
+    width: 400px;
+    
+}
+
+.box2 {
+    margin: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.834);
+    color: orange;
+    padding: 10px;
+    gap: 4rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px gold;
+}
+
+#foto2 {
+    width: 300px;
+    height: 400px;
+    border: solid 2px orange;
+    border-radius: 5px;
+}
+
+.texto_box2 h3 {
+    width: 400px;
+    font-size: 60px;
+    margin: 0%;
+}
+
+.texto_box2 {
+    width: 400px;
+}
+
+.box3 {
+    margin: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.834);
+    color: orange;
+    padding: 10px;
+    gap: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px gold;
+}
+
+#foto3 {
+    width: 300px;
+    height: 400px;
+    border: solid 2px orange;
+    border-radius: 5px;
+}
+
+.texto_box3 h3 {
+    width: 400px;
+    font-size: 60px;
+    margin: 0%;
+}
+
+.texto_box3 {
+    width: 400px;
+}
+
+/*Finalizas las secciones*/
+
+/*Comienza el footer*/
+.container__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/footer.jpg);
+    background-size: cover;
+    border-top: solid 5px orange;
+    margin-bottom: 0%;
+}
+
+.titulo_footer {
+    color: orange;
+}
+
+.redes {
+    display: inline-block;
+}
+
+.redes a img {
+    width: 50px;
+    height: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.copy {
+    color: orange;
+}
+
+/* Finaliza el footer*/
+
+/*Comienza educacion.html*/
+
+.container_tutorial {
+    background-image: url(../img/body.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 400x 400px;
+    grid-template-areas: "tutorial__info1 tutorial__info2"
+                            "tutorial__info3 tutorial__info3";
+    gap: 10px;
+}
+
+.tutorial__info1 {
+    grid-area: tutorial__info1;
+    color: orange;
+    border: solid 2px orange;
+
+}
+
+.tutorial__info2 {
+    grid-area: tutorial__info2;
+    color: orange;
+    border: solid 2px orange;
+}
+
+.tutorial__info3 {
+    grid-area: tutorial__info3;
+    color: orange;
+    border: solid 2px orange;
+}
+
+.tutorial1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subtexto1 {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.834);
+}
+
+.subtexto2 {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.834);
+}
+
+.tutorial2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tutorial3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+/*Comienzo vista MOBILE*/
+
+@media screen and (min-width:320px) and (max-width:667px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows: /* 200px 700px 450px 450px 450px 200px */ 200px 400px 400px 400px 400px 200px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "container1"
+        "container2"
+        "container3"
+        "footer";
+
+    }
+
+
+
+    .container__header {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+       /*  flex-wrap: wrap; */
+        width: 100%;
+        
+    }
+
+    #logo {
+        background-color:  rgba(0, 0, 0, 0.604);
+        font-family: 'Tapestry', cursive;
+        font-size: 50px;
+    }
+    
+    .menu li{
+        list-style: none;
+        display: inline;
+        width: 250px;
+        
+    }
+    
+    .menu li a{
+        text-decoration: none;
+/*         padding-left: 1rem;
+        padding-right: 1rem; */
+        color: orange;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        align-content: center;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.604);
+        
+    }
+    
+
+
+    /*Comienza Main*/
+    .container__main {
+        height: 400px;
+        font-size: 20px;
+    }
+
+    /*Secciones*/
+
+  #foto {
+    display: none;
+  }
+
+  #foto2 {
+      display: none;
+  }
+
+  #foto3 {
+      display: none;
+  }
+
+  .box1 {
+      background-image: url(/img/foto1.jpg);
+      background-size: cover;
+      height: 400px;
+
+  }
+
+  .texto_box1 h3 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0%;
+}
+
+.texto_box1 {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.529);
+}
+
+  .box2 {
+      background-image: url(/img/foto2.jpeg);
+      background-size: cover;
+      height: 400px;
+    
+  }
+
+  .texto_box2 h3 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0%;
+}
+
+.texto_box2 {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.529);
+}
+
+  .box3 {
+    background-image: url(/img/foto3.jpeg);
+    background-size: cover;
+    height: 400px;
+
+  }
+
+  .texto_box3 h3 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0%;
+}
+
+.texto_box3 {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.529);
+}
+
+.container_tutorial {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 400px 400x 400px;
+    grid-template-areas: "tutorial__info1"
+                        "tutorial__info2"
+                        "tutorial__info3";
+}
